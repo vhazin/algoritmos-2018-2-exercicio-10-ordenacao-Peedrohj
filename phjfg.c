@@ -16,6 +16,11 @@ void sort(char name[][20], int num)
             }
         }
     }
+
+    for (int i = 0; i < num; i++)
+    {
+        printf("%s\n", name[i]);
+    }
 }
 
 int main()
@@ -43,10 +48,6 @@ int main()
 
     sort(name, quant);
 
-    for (int i = 0; i < quant; i++)
-    {
-        printf("%s\n", name[i]);
-    }
     printf("Se comportaram: %d | Nao se comportaram: %d\n", mais, menos);
     return 0;
 }
