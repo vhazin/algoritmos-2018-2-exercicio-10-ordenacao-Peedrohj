@@ -4,9 +4,9 @@
 void sort(char name[][20], int num)
 {
     char aux[20];
-    for (int i = 1; i < num; i++)
+    for (int i = 0; i < num; i++)
     {
-        for (int j = 1; j < num; j++)
+        for (int j = 0; j < num; j++)
         {
             if (strcmp(name[j - 1], name[j]) > 0)
             {
@@ -47,6 +47,6 @@ int main()
     {
         printf("%s\n", name[i]);
     }
-    printf("Se comportaram: %d | Não se comportaram: %d\n", mais, menos);
+    printf("Se comportaram: %d | Nao se comportaram: %d\n", mais, menos);
     return 0;
 }
